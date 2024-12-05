@@ -1,7 +1,6 @@
-import { NextApiRequest } from 'next';
 import client from "@/sanity/sanityClient";
 
-export async function GET(req: NextApiRequest, { params }: any) {
+export async function GET(req: Request, { params }: any) {
     const { id } = await params ;
   
     if (!id) {
